@@ -6,7 +6,6 @@ import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Image from "next/image";
 
-
 type Experience = {
   company: string;
   position: string;
@@ -55,8 +54,11 @@ export default function MainPage() {
         <div className="md:col-span-1 place-self-center text-left md:py-16 pb-10 pt-16 mt-6 tracking-wider space-y-6">
           <h1 className="text-3xl md:text-5xl font-bold text-black">
             {" "}
-            Hi! I'm <p className="bg-[#010126] text-[#fcbf4e]">Jesse Christian Mambu</p> A
-            Fullstack Web Developer{" "}
+            Hi! I'm{" "}
+            <p className="bg-[#010126] text-[#fcbf4e]">
+              Jesse Christian Mambu
+            </p>{" "}
+            A Fullstack Web Developer{" "}
           </h1>
           <p className="text-2xl text-black mt-4">
             I understand that every business is unique, and I’m here to develop
@@ -80,7 +82,7 @@ export default function MainPage() {
       <main>
         <section className="md:grid md:grid-cols-2 bg-white md:px-23 px-5 py-20 h-screen w-full items-center flex flex-col">
           <div className="col-span-1">
-          <Image
+            <Image
               src="/about.png"
               alt="foto html"
               width={600}
@@ -117,104 +119,92 @@ export default function MainPage() {
       </main>
 
       {/* Expertise Section*/}
-      <main className="h-screen p-10 bg-gray-200 text-center">
-        <section className="md:grid sm:grid-cols-3 gap-6 flex flex-col">
+      <main className="h-full p-10 bg-gray-200 text-center">
+        <section className="md:grid sm:grid-cols-3 flex flex-col items-center">
           <h1 className="col-span-3 text-4xl md:text-4xl font-bold text-black mb-10 ">
             My Expertise
           </h1>
-          <div className="bg-white p-4 shadow-md rounded-lg text-center w-70 h-60 place-self-center">
-            <Image
-              src="/html2.png"
-              alt="foto html"
-              width={100}
-              height={100}
-              className="place-self-center"
-            />
-            <h3 className="text-lg md:text-xl font-semibold text-black mt-3">
-              HTML
-            </h3>
-            <p className="text-black">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              doloribus nam quis soluta .
-            </p>
-          </div>
-          <div className="bg-white p-4 shadow-md rounded-lg text-center w-70 h-60 place-self-center">
-            <Image
-              src="/css2.png"
-              alt="foto html"
-              width={100}
-              height={100}
-              className="place-self-center"
-            />
-            <h3 className="text-lg md:text-xl font-semibold text-black">CSS</h3>
-            <p className="text-black">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              doloribus nam quis soluta .
-            </p>
-          </div>
-          <div className="bg-white p-4 shadow-md rounded-lg text-center w-70 h-60 place-self-center">
-            <Image
-              src="/js.png"
-              alt="foto html"
-              width={100}
-              height={100}
-              className="place-self-center"
-            />
-            <h3 className="text-lg md:text-xl font-semibold text-black">
-              JAVASCRIPT
-            </h3>
-            <p className="text-black">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              doloribus nam quis soluta .
-            </p>
-          </div>
-          <div className="bg-white p-4 shadow-md rounded-lg text-center w-70 h-60 place-self-center">
-            <Image
-              src="/nextjs.png"
-              alt="foto html"
-              width={100}
-              height={100}
-              className="place-self-center"
-            />
-            <h3 className="text-lg md:text-xl font-semibold text-black mt-3">
-              NEXTJS
-            </h3>
-            <p className="text-black">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              doloribus nam quis soluta .
-            </p>
-          </div>
-          <div className="bg-white p-4 shadow-md rounded-lg text-center w-70 h-60 place-self-center">
-            <Image
-              src="/react.png"
-              alt="foto html"
-              width={100}
-              height={100}
-              className="place-self-center"
-            />
-            <h3 className="text-lg md:text-xl font-semibold text-black">
-              REACT
-            </h3>
-            <p className="text-black">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              doloribus nam quis soluta .
-            </p>
-          </div>
-          <div className="bg-white p-4 shadow-md rounded-lg text-center w-70 h-60 place-self-center">
-            <Image
-              src="/logotailwind.png"
-              alt="foto html"
-              width={100}
-              height={100}
-              className="place-self-center"
-            />
-            <h3 className="text-lg md:text-xl font-semibold text-black">
-              TAILWIND
-            </h3>
-            <p className="text-black">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              doloribus nam quis soluta .
-            </p>
+          <div className="col-span-3 grid md:grid-cols-3 gap-6 mx-20">
+            <div className="bg-white p-4 shadow-md rounded-lg text-center w-70 h-60 flex flex-col items-center">
+              <Image
+                src="/html2.png"
+                alt="foto html"
+                width={100}
+                height={100}
+              />
+              <h3 className="text-lg md:text-xl font-semibold text-black mt-3">
+                HTML
+              </h3>
+              <p className="text-black">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                doloribus nam quis soluta .
+              </p>
+            </div>
+            <div className="bg-white p-4 shadow-md rounded-lg text-center w-70 h-60 flex flex-col items-center">
+              <Image src="/css2.png" alt="foto html" width={100} height={100} />
+              <h3 className="text-lg md:text-xl font-semibold text-black">
+                CSS
+              </h3>
+              <p className="text-black">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                doloribus nam quis soluta .
+              </p>
+            </div>
+            <div className="bg-white p-4 shadow-md rounded-lg text-center w-70 h-60 flex flex-col items-center">
+              <Image src="/js.png" alt="foto html" width={100} height={100} />
+              <h3 className="text-lg md:text-xl font-semibold text-black">
+                JAVASCRIPT
+              </h3>
+              <p className="text-black">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                doloribus nam quis soluta .
+              </p>
+            </div>
+            <div className="bg-white p-4 shadow-md rounded-lg text-center w-70 h-60 flex flex-col items-center">
+              <Image
+                src="/nextjs.png"
+                alt="foto html"
+                width={100}
+                height={100}
+              />
+              <h3 className="text-lg md:text-xl font-semibold text-black mt-3">
+                NEXTJS
+              </h3>
+              <p className="text-black">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                doloribus nam quis soluta .
+              </p>
+            </div>
+            <div className="bg-white p-4 shadow-md rounded-lg text-center w-70 h-60 flex flex-col items-center">
+              <Image
+                src="/react.png"
+                alt="foto react"
+                width={100}
+                height={100}
+              />
+              <h3 className="text-lg md:text-xl font-semibold text-black">
+                REACT
+              </h3>
+              <p className="text-black">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                doloribus nam quis soluta .
+              </p>
+            </div>
+            <div className="bg-white p-4 shadow-md rounded-lg text-center w-70 h-60 flex flex-col items-center">
+              <Image
+                src="/logotailwind.png"
+                alt="foto tailwind"
+                width={100}
+                height={100}
+              />
+              <h3 className="text-lg md:text-xl font-semibold text-black">
+                TAILWIND
+              </h3>
+              <p className="text-black">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                doloribus nam quis soluta .
+              </p>
+            </div>
           </div>
         </section>
       </main>
@@ -222,13 +212,13 @@ export default function MainPage() {
       {/* Portofolio Section */}
       <section className="h-screen p-10 bg-white text-center text-black">
         <div className="grid grid-cols-2 mt-10">
-          <div className="col-span-1">
+          <div className="md:col-span-1">
             <Image
               src="/sscompanywebsite.jpg"
               alt="gambar company website"
               width={500}
               height={500}
-              className="place-self-center"
+              className="md:mx-15"
             />
             <h1 className="m-5 text-2xl">Starbucks Website Clone</h1>
             <p className="px-10">
@@ -242,13 +232,13 @@ export default function MainPage() {
               presence and user engagement.
             </p>
           </div>
-          <div className="col-span-1">
+          <div className="md:col-span-1">
             <Image
               src="/ssblogspot.png"
               alt="gambar blogspot"
               width={500}
               height={500}
-              className="place-self-center"
+              className="md:mx-20"
             />
             <h1 className="m-5 text-2xl">Individual Blogspot</h1>
             <p className="px-10">
@@ -266,7 +256,7 @@ export default function MainPage() {
 
       {/*Testimonials Section*/}
       <section className="relative grid md:grid-cols-2 gap-4 md:pl-23 px-5 bg-[#fcbf4e]">
-        <div className="md:col-span-1 place-self-center ">
+        <div className="md:col-span-1 ">
           <Image
             src="/rus.png"
             alt="rus's Image"
@@ -295,7 +285,7 @@ export default function MainPage() {
       </section>
 
       {/*Experience Section*/}
-      <div className="grid place-self-center w-full px-30 py-10 bg-[#010126]" >
+      <div className="grid place-self-center w-full px-6 py-10 mx-10 md:px-20 bg-[#010126]">
         <h1 className="text-3xl font-bold text-center mb-6">
           Working Experience
         </h1>
