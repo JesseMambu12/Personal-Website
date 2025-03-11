@@ -349,24 +349,24 @@ export default function MainPage() {
         {/* Contact Info */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl mt-12 text-center">
           {/* Club Info */}
-          <div className="bg-gray-300 p-6 rounded-lg">
-            <MdEmail className="text-black text-5xl place-self-center" />
+          <div className="bg-gray-300 p-6 rounded-lg flex flex-col items-center">
+            <MdEmail className="text-black text-5xl" />
             <h3 className="font-bold text-black mt-2">EMAIL</h3>
             <p className="text-gray-600 mt-1">jessechristianmambu@gmail.com</p>
             <p className="text-gray-600 mt-1">tesaenjelia@gmail.com</p>
           </div>
 
           {/* Phone Info */}
-          <div className="bg-gray-300 p-6 rounded-lg">
-            <FaPhoneFlip className="text-black text-5xl place-self-center" />
+          <div className="bg-gray-300 p-6 rounded-lg flex flex-col items-center">
+            <FaPhoneFlip className="text-black text-5xl" />
             <h3 className="font-bold text-black mt-2">PHONE (LANDLINE)</h3>
             <p className="text-gray-600 mt-1">+62 23 567 8987</p>
             <p className="text-gray-600">+62 44 252 3336</p>
           </div>
 
           {/* Office Location */}
-          <div className="bg-gray-300 p-6 rounded-lg">
-            <FaLocationDot className="text-black text-5xl place-self-center" />
+          <div className="bg-gray-300 p-6 rounded-lg flex flex-col items-center">
+            <FaLocationDot className="text-black text-5xl" />
             <h3 className="font-bold text-black mt-2">OUR OFFICE LOCATION</h3>
 
             <p className="text-gray-600 mt-1">Serpong Garden Apartment</p>
