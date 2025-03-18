@@ -1,6 +1,7 @@
 import { FaFacebookSquare } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
 import { FaSquareInstagram } from "react-icons/fa6";
+
 export default function Footer() {
     return (
         <footer className="bg-[#010126] text-white p-10">
