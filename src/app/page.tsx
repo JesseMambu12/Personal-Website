@@ -50,7 +50,7 @@ export default function MainPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <header className="relative h-screen w-full grid md:grid-cols-2 bg-[#fcbf4e] gap-4 md:pl-23 px-5 pt-16">
+      <header className="relative h-screen w-full grid md:grid-cols-2 bg-[#fcbf4e] gap-4 md:pl-23 px-5 pt-13">
         <div className="md:col-span-1 place-self-center text-left md:py-16 pb-10 pt-16 mt-6 tracking-wider space-y-6">
           <h1 className="text-3xl md:text-5xl font-bold text-black">
             {" "}
